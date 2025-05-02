@@ -1,4 +1,7 @@
 from fastapi import FastAPI, Request from fastapi.middleware.cors import CORSMiddleware from pymongo import MongoClient from bson.json_util import dumps import re import os
+from fastapi import FastAPI
+from fastapi.responses import FileResponse
+import os
 
 from motor.motor_asyncio import AsyncIOMotorClient from info import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME
 
@@ -30,3 +33,9 @@ result = [{
 } for f in files]
 return result
 
+
+app = FastAPI()
+
+@app.get("/")
+async def read_index():
+    return FileResponse(os.path.join("web", "index.html"))
