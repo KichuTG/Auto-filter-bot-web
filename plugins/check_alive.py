@@ -6,11 +6,11 @@ CMD = ["/", "."]
 
 @Client.on_message(filters.command("alive", CMD))
 async def check_alive(_, message):
-    await message.reply_text("𝖡𝗎𝖽𝖽𝗒 𝖨𝖺𝗆 𝖠𝗅𝗂𝗏𝖾 :) 𝖧𝗂𝗍 /start \n\n𝖧𝗂𝗍 /help 𝖥𝗈𝗋 𝖧𝖾𝗅𝗉 ;)\n\n\n𝖧𝗂𝗍 /ping 𝖳𝗈 𝖢𝗁𝖾𝖼𝗄 𝖡𝗈𝗍 𝖯𝗂𝗇𝗀 😁")
+    await message.reply_text("<b>⌾ ʙᴏᴛ ɪꜱ ᴀʟɪᴠᴇ ᴀɴᴅ ᴡᴏʀᴋɪɴɢ</b>")
 
 @Client.on_message(filters.command("help", CMD))
 async def help(_, message):
-    await message.reply_text("𝖧𝗂𝗍 /movie 𝖥𝗈𝗋 𝖬𝗈𝗏𝗂𝖾 𝖲𝖾𝖺𝗋𝖼𝗁 𝖱𝗎𝗅𝖾𝗌 📃\n\n𝖧𝗂𝗍 /series 𝖥𝗈𝗋 𝖲𝖾𝗋𝗂𝖾𝗌 𝖲𝖾𝖺𝗋𝖼𝗁 𝖱𝗎𝗅𝖾𝗌 📃\n\n\n𝖧𝗂𝗍 /tutorial 𝖥𝗈𝗋 𝖯𝗋𝗈𝗉𝖾𝗋 𝖳𝗎𝗍𝗈𝗋𝗂𝖺𝗅 𝖵𝗂𝖽𝖾𝗈𝗌 🤗")
+    await message.reply_text("<b>⌾ ʜɪᴛ /movies ꜰᴏʀ ɢᴇᴛᴛɪɴɢ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ʀᴜʟᴇꜱ \n\n⌾ ʜɪᴛ /series ꜰᴏʀ ꜱᴇʀɪᴇꜱ ꜱᴇᴀʀᴄʜ ʀᴜʟᴇꜱ</b>")
 
 
 @Client.on_message(filters.command("movie", CMD))
