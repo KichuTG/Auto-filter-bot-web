@@ -13,3 +13,5 @@ aiohttp
 openai
 python-dotenv
 psutil
+fastapi
+uvicorn
